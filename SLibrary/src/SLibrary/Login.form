@@ -6,7 +6,7 @@
   </Properties>
   <SyntheticProperties>
     <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
-    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="true"/>
   </SyntheticProperties>
   <AuxValues>
     <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
@@ -61,8 +61,8 @@
                           </Group>
                           <EmptySpace min="-2" pref="69" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                              <Component id="txtusername" max="32767" attributes="0"/>
-                              <Component id="txtpass" pref="140" max="32767" attributes="0"/>
+                              <Component id="txtusername" pref="140" max="32767" attributes="0"/>
+                              <Component id="txtpass" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -130,8 +130,6 @@
         </Component>
         <Component class="javax.swing.JTextField" name="txtusername">
         </Component>
-        <Component class="javax.swing.JTextField" name="txtpass">
-        </Component>
         <Component class="javax.swing.JButton" name="jButton1">
           <Properties>
             <Property name="text" type="java.lang.String" value="Login"/>
@@ -155,6 +153,8 @@
             </Property>
             <Property name="text" type="java.lang.String" value="Login"/>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JPasswordField" name="txtpass">
         </Component>
       </SubComponents>
     </Container>
