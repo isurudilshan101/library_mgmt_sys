@@ -129,7 +129,7 @@ public class Login extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
         
-      String UserName=txtusername.getText();
+      String UserName=C.getText();
       String Pass=txtpass.getText();
       
       if(UserName.equals("john")&& Pass.equals("123"))
@@ -137,10 +137,15 @@ public class Login extends javax.swing.JFrame {
       {
           Main m=new Main();
           this.hide();
-          M.setVisible(true);
+          m.setVisible(true);
       }
       else
       {
+          JOptionPane.showMessageDialog(this, "User Name or Password do not match");
+          txtusername.setText("");
+          txtpass.setText("");
+          txtusername.requestFocus();
+          
           
       }
         
